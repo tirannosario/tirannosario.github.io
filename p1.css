@@ -1,0 +1,119 @@
+body
+{
+	background: #dddfd4;
+	font-family: 'Varela Round', sans-serif;
+}
+
+#txt1
+{
+	padding-top: 20%;
+}
+
+#txt1 h1
+{
+	font-size: 4em;
+	font-family: 'Varela Round', sans-serif;
+	background: #fae596;
+	width:45%;
+	text-align: center;
+	margin-bottom: 0px;
+	color:#173e43;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#txt1 h2
+{
+	font-size: 5em;
+	font-family: 'Varela Round', sans-serif;
+	color:#3fb0ac;
+	background: #fae596;
+	text-align: center;
+	width: 75%;
+	margin: 0px 0px 0px 10%;
+}
+
+#txt1 h3
+{
+	font-size: 3em;
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	background: #fae596;
+	width: 55%;
+	margin: 0px 0px 0px 0px;
+	color:#173e43;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#icode
+{
+	padding-top: 60%;
+	font-size: 15em;
+}
+
+html
+{
+	height: 100%;
+}
+
+#info
+{
+	margin-top:27%;
+	font-family: 'Pacifico', cursive;
+	font-size: 3em;
+	margin-bottom:0px;
+	color:#173e43;
+	text-shadow: 2px 0 0 #fae596, -2px 0 0 #fae596, 0 2px 0 #fae596, 0 -2px 0 #fae596, 1px 1px #fae596, -1px -1px 0 #fae596, 1px -1px 0 #fae596, -1px 1px 0 #fae596;
+}
+
+#lorem
+{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.8em;
+	background: #3fb0ac;
+	color: #fae596;
+	/*margin-top: 27%;*/
+	padding: 3%;
+	border: 6px solid white;
+	text-align: center;
+	line-height: 1.6;
+}
+
+#social
+{
+	font-size: 3em;
+	width: 30%;
+	margin-left: 57%;
+}
+
+#social a
+{
+	padding: 10px;
+}
+
+.imgu
+{
+	width: 100%;
+	height: 80%;
+}
+
+.util
+{
+	background: #fae596;
+	width: 30%;
+	margin: 1.6%;
+	text-align: center;
+	color:#173e43;
+	border: 5px solid #fff;
+}
+
+.util hr
+{
+	border-color: #173e43;
+	border-width: 2px;
+}
+
+.util p:nth-of-type(1)
+{
+	font-size: 2em;
+	font-weight:600;
+}

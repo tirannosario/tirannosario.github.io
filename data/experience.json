@@ -1,0 +1,15 @@
+{
+	"title" : "Experience",
+	"experience" : [
+		{
+			"timeperiod" : "2018",
+			"company" : "Divano",
+			"description" : "Troppo Comodo"
+		},
+		{
+			"timeperiod" : "2019",
+			"company" : "Sedia",
+			"description" : "Troppo Scomoda"
+		}
+	]
+}

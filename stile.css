@@ -3,7 +3,8 @@ html,body,#home
     width: 100%;
     height: 100%;
     background-color: #1A535C;
-    font-family: 'Raleway';
+    /*font-family: 'Raleway';*/
+    font-family: 'Roboto Mono';
 }
 
 #info
@@ -30,7 +31,6 @@ html,body,#home
 #info a
 {
     color: #FFEA87;
-    width: 20%;
 }
 
 #info a:hover
@@ -47,6 +47,18 @@ html,body,#home
 #menu
 {
     margin-top: 25%;
+}
+
+.navMenu
+{
+    background-color: transparent;
+    border: 0px;
+    color: #6ED6CE;
+}
+
+.navMenu:hover
+{
+    color: #FF8585;
 }
 
 .btnMenu
@@ -76,3 +88,28 @@ html,body,#home
     height: 100%;
     margin: 0px 0px 0px 0px;
 }
+
+#projects
+{
+    overflow-y: auto;
+    height: 100%;
+}
+#projects img
+{
+    width: 80%;
+    height: auto;
+    margin: 10% auto;
+}
+
+#skills
+{
+    margin: 20% 5%;
+}
+
+#skills .progress
+{
+    margin: 2%;
+    height: 2em;
+    font-size: larger;
+}
+

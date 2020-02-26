@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Rosario Galioto</title>
@@ -23,12 +23,36 @@
         <a href="twitter.com" class="fab fa-twitter-square fa-lg"></a>
         <a href="linkedin.com" class="fab fa-linkedin fa-lg"></a>
         <a href="github.com" class="fab fa-github fa-lg"></a>
+        <hr>
+        <div v-if="view!=='menu'">
+            <button class="navMenu" @click="showProjects()">Projects</button> /
+            <button class="navMenu" @click="showSkills()">Skills</button> /
+            <button class="navMenu" @click="showAbout()">About Me</button>
+        </div>
     </div>
     <div id="content" class="col-md-8 col-12">
-        <div id="menu">
-            <button class="btnMenu">Projects</button>
-            <button class="btnMenu">Skills</button>
-            <button class="btnMenu">About Me</button>
+        <div id="menu" v-if="view==='menu'">
+            <button class="btnMenu" v-on:click="showProjects">Projects</button>
+            <button class="btnMenu" v-on:click="showSkills">Skills</button>
+            <button class="btnMenu" v-on:click="showAbout">About Me</button>
+        </div>
+        <div id="projects" v-if="view==='projects'">
+            <h1>No Idea :(</h1>
+            <img src="https://i.imgflip.com/3guvw8.jpg?a437616" alt="">
+        </div>
+        <div id="skills" v-if="view==='skills'">
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML/CSS/JS</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">C</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Java</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Haskell</div>
+            </div>
         </div>
     </div>
 </div>

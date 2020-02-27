@@ -8,7 +8,7 @@ html,body,#home
 }
 #back
 {
-    float: left;
+    /*float: left;*/
 }
 
 #info
@@ -89,6 +89,7 @@ html,body,#home
 #content
 {
     background-color: #F8FFF8;
+    overflow-y: auto;
     float: right;
     height: 100%;
     margin: 0px 0px 0px 0px;
@@ -96,7 +97,6 @@ html,body,#home
 
 #projects
 {
-    overflow-y: auto;
     height: 100%;
 }
 #projects img
@@ -109,7 +109,6 @@ html,body,#home
 
 #projects h2
 {
-    margin-top: 3%;
     text-align: center;
     font-size: 3em;
     font-weight: bold;
@@ -118,7 +117,6 @@ html,body,#home
 
 #skills h2
 {
-    margin-top: 3%;
     text-align: center;
     font-size: 3em;
     font-weight: bold;
@@ -127,7 +125,6 @@ html,body,#home
 
 #skills
 {
-    overflow-y: auto;
     height: 100%;
 }
 

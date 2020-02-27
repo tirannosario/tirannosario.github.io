@@ -12,10 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono:400,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d0c7ef96fe.js" crossorigin="anonymous"></script>
     <script src="controller.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div id="home">
-    <div id="info" class="col-md-4 col-12">
+    <div id="info" class="col-md-4 col-sm-12 col-12">
         <img src="biopic.jpg" alt="biopic">
         Hi, I'm <span id="name">Rosario Galioto</span> , 21 yo, Italian.
         Currently Computer Science Student in Turin. <span>👨‍💻</span>
@@ -30,7 +31,7 @@
             <button class="navMenu" @click="showAbout()">About Me</button>
         </div>
     </div>
-    <div id="content" class="col-md-8 col-12">
+    <div id="content" class="col-md-8 col-sm-12 col-12">
         <button v-if="view!=='menu'" id="back" class="fas fa-angle-left fa-7x navMenu" @click="goBack()"></button>
         <div id="menu" v-if="view==='menu'">
             <h2 class="typewriting">Hi,This is my Portfolio</h2>

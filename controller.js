@@ -7,8 +7,13 @@ var home = new Vue ({
         showProjects : function () {
             this.view = 'projects';
         },
+
         showSkills : function () {
             this.view = 'skills';
+        },
+
+        goBack : function () {
+            this.view = 'menu';
         }
     }
 });

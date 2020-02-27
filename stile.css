@@ -6,9 +6,17 @@ html,body,#home
     /*font-family: 'Raleway';*/
     font-family: 'Roboto Mono';
 }
+
 #back
 {
-    /*float: left;*/
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    #back {
+        display: block;
+        margin: 0% auto;
+    }
 }
 
 #info
@@ -35,6 +43,7 @@ html,body,#home
 #info a
 {
     color: #FFEA87;
+    margin: 0% 10%;
 }
 
 #info a:hover
@@ -149,6 +158,12 @@ ul
 li
 {
     margin: 4% auto;
+}
+
+@media screen and (max-width: 600px) {
+    .typewriting {
+        font-size: 1.2em;
+    }
 }
 
 .typewriting {

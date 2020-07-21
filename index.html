@@ -1,86 +1,43 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8">
-    <title>Rosario Galioto</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="stile.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono:400,500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d0c7ef96fe.js" crossorigin="anonymous"></script>
-    <script src="controller.js" defer></script>
-    <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1">
-</head>
-<body>
-<div id="home">
-    <div id="info" class="col-md-4 col-sm-12 col-12">
-        <img src="biopic.jpg" alt="biopic">
-        Hi, I'm <span id="name">Rosario Galioto</span> , 21 yo, Italian.
-        Currently Computer Science Student in Turin. <span>👨‍💻</span>
-        <hr>
-        <a href="https://twitter.com/tirannosario" class="fab fa-twitter-square fa-lg"></a>
-        <a href="https://www.linkedin.com/in/rosario-galioto-52a231121/" class="fab fa-linkedin fa-lg"></a>
-        <a href="https://github.com/tirannosario" class="fab fa-github fa-lg"></a>
-        <hr>
-        <div v-if="view!=='menu'">
-            <button class="navMenu" @click="showProjects()">Projects</button> /
-            <button class="navMenu" @click="showSkills()">Skills</button> /
-            <button class="navMenu" @click="showAbout()">About Me</button>
+<html>
+    <head>
+        <title>
+            Portfolio
+        </title>
+        <link rel="stylesheet" href="stile.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1">
+    </head>
+    <body>
+        <div id="nav">
+            <img src="biopic.jpg" alt="biopic" id="biopic">
+            <h2 id="title">Rosario Galioto</h2>
+            <hr>
+            <a href="" class="navLink">About</a>
+            <a href="" class="navLink">Education</a>
+            <a href="" class="navLink">Skills</a>
+            <a href="" class="navLink">Experience</a>
         </div>
-    </div>
-    <div id="content" class="col-md-8 col-sm-12 col-12">
-        <button v-if="view!=='menu'" id="back" class="fas fa-angle-left fa-6x navMenu" @click="goBack()"></button>
-        <div id="menu" v-if="view==='menu'">
-            <h2 class="typewriting">Hi,This is my Portfolio</h2>
-            <button class="btnMenu" v-on:click="showProjects">Projects</button>
-            <button class="btnMenu" v-on:click="showSkills">Skills</button>
-            <button class="btnMenu" v-on:click="showAbout">About Me</button>
-        </div>
-        <div id="projects" v-if="view==='projects'">
-            <h2>/Projects</h2>
-            <div class="article">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus nullam. Feugiat scelerisque varius morbi enim nunc faucibus. Augue neque gravida in fermentum et sollicitudin. Consequat ac felis donec et odio pellentesque diam. Tincidunt eget nullam non nisi est sit. Dictumst quisque sagittis purus sit. Congue mauris rhoncus aenean vel. Ultrices vitae auctor eu augue. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Sapien et ligula ullamcorper malesuada proin libero. Rhoncus dolor purus non enim praesent. Ut pharetra sit amet aliquam id diam. In dictum non consectetur a erat nam at lectus. Vel risus commodo viverra maecenas accumsan lacus vel facilisis.
-                <img src="https://i.imgflip.com/3guvw8.jpg?a437616" alt="">
-                <hr>
-                Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Turpis egestas pretium aenean pharetra magna ac. Justo eget magna fermentum iaculis eu. Maecenas volutpat blandit aliquam etiam erat. Vel turpis nunc eget lorem dolor sed viverra ipsum. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Quis viverra nibh cras pulvinar mattis nunc sed. Habitasse platea dictumst vestibulum rhoncus. Ante metus dictum at tempor commodo ullamcorper a. Pellentesque elit eget gravida cum sociis natoque penatibus. Lorem ipsum dolor sit amet consectetur. Ullamcorper morbi tincidunt ornare massa eget egestas. Gravida dictum fusce ut placerat orci nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Nibh tellus molestie nunc non blandit. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-                <img src="https://mr.comingsoon.it/imgdb/SerieTV/news/1/99508_ppl.jpg" alt="">
+        <div id="home">
+            <div id="about">
+                <h2 class="secTitle">About</h2>
+                <div>
+                    <div class="mainArticle">
+                        Hi, i'm <span class="important">Rosario Galioto</span>, a young developer.
+                        <br>
+                        &#128204; Currently studing in Turin.
+                    </div>
+                    <div class="secondArticle">
+                        <h2>Contact</h2>
+                        <div id="contact">
+                            <p>&#128235; <a href = "mailto: glt.rosario@gmail.com">glt.rosario@gmail.com</a></p>
+                            <p>&#9742; 3343882212</p>
+                            <p class="social"><a href="https://www.linkedin.com/in/rosario-galioto-52a231121/"><img src="icon/linkedin.svg" alt="linkedin"></a></p>
+                            <p class="social"><a href="https://github.com/tirannosario"><img src="icon/github-image.svg" alt="github"></a></p>
+                            <p class="social"><a href="https://twitter.com/tirannosario"><img src="icon/twitter.svg" alt="twitter"></a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="skills" v-if="view==='skills'">
-            <h2>/Skills</h2>
-            <div class="article">
-                <ul>
-                    <li>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML/CSS/JS</div>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum lectus mauris ultrices eros. Lorem donec massa sapien faucibus et molestie. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Risus ultricies tristique nulla aliquet enim tortor. Convallis aenean et tortor at risus viverra adipiscing. Est ante in nibh mauris cursus mattis. Tortor consequat id porta nibh venenatis cras. Sem viverra aliquet eget sit amet. Est ultricies integer quis auctor elit sed vulputate.
-                    </li>
-                    <li>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">C</div>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum lectus mauris ultrices eros. Lorem donec massa sapien faucibus et molestie. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Risus ultricies tristique nulla aliquet enim tortor. Convallis aenean et tortor at risus viverra adipiscing. Est ante in nibh mauris cursus mattis. Tortor consequat id porta nibh venenatis cras. Sem viverra aliquet eget sit amet. Est ultricies integer quis auctor elit sed vulputate.
-                    </li>
-                    <li>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Java</div>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum lectus mauris ultrices eros. Lorem donec massa sapien faucibus et molestie. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Risus ultricies tristique nulla aliquet enim tortor. Convallis aenean et tortor at risus viverra adipiscing. Est ante in nibh mauris cursus mattis. Tortor consequat id porta nibh venenatis cras. Sem viverra aliquet eget sit amet. Est ultricies integer quis auctor elit sed vulputate.
-                    </li>
-                    <li>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Haskell</div>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum lectus mauris ultrices eros. Lorem donec massa sapien faucibus et molestie. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Risus ultricies tristique nulla aliquet enim tortor. Convallis aenean et tortor at risus viverra adipiscing. Est ante in nibh mauris cursus mattis. Tortor consequat id porta nibh venenatis cras. Sem viverra aliquet eget sit amet. Est ultricies integer quis auctor elit sed vulputate.
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
+    </body>
 </html>

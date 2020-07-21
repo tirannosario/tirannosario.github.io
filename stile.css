@@ -1,194 +1,113 @@
-html,body,#home
+html,body
 {
-    width: 100%;
     height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 1.1vw;
+}
+
+#nav
+{
     background-color: #1A535C;
-    /*font-family: 'Raleway';*/
-    font-family: 'Roboto Mono';
-}
-
-#back
-{
-    display: block;
-}
-
-@media screen and (max-width: 600px) {
-    #back {
-        display: block;
-        margin: 0% auto;
-    }
-}
-
-#info
-{
+    height: 100%;
+    width: 25%;
     float: left;
-    height: fit-content;
-    margin: 0px 0px 0px 0px;
-    font-family: 'Roboto Mono';
     font-size: 1.5em;
-    margin:auto;
-    color: #FFEA87;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#info img
+#biopic
 {
     display: block;
-    margin: 10% auto;
+    margin: 10% auto 0;
     width: 65%;
-    height: 30%;
+    height: 32%;
     border-radius: 50%;
     border: 4px solid #F8FFF8;
 }
 
-#info a
+#title
 {
-    color: #FFEA87;
-    margin: 0% 10%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 2% auto;
+    color: #F7FFF7;
+    font-size: 1.2em;
+
+
 }
 
-#info a:hover
+#nav hr
 {
-    color: #FF8585;
+    margin: 2% 5% 5% 5%;
+    color: #F7FFF7;
 }
 
-#name
+.navLink
 {
-    color: #FF8585;
+    margin: 5% auto;
+    color: #F7FFF7;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navLink:hover
+{
+    color: #FF6B6B;
     font-size: 1.1em;
 }
 
-#menu
+#home
 {
-    margin-top: 25%;
-    text-align: center;
-}
-
-.navMenu
-{
-    background-color: transparent;
-    border: 0px;
-    color: #6ED6CE;
-}
-
-.navMenu:hover
-{
-    color: #FF8585;
-}
-
-.btnMenu
-{
-    margin: 5% auto;
-    display: block;
-    width: 60%;
-    height: 40%;
-    border: 4px solid #FF8585;
-    color: #FF8585;
-    font-size: 2em;
-    font-weight: bold;
-    background-color: #F8FFF8;
-}
-
-.btnMenu:hover
-{
-    background-color: #FFEA87;
-    color: #437279;
-    border: 4px solid #437279;
-}
-
-#content
-{
-    background-color: #F8FFF8;
-    overflow-y: auto;
+    background-color: #F7FFF7;
+    height: 100%;
+    width: 75%;
+    overflow-y: scroll;
     float: right;
-    height: 100%;
-    margin: 0px 0px 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
 }
 
-#projects
+.important
 {
-    height: 100%;
-}
-#projects img
-{
-    width: 80%;
-    height: auto;
-    margin: 10% auto;
-    display: block;
+    color: #4ECDC4;
 }
 
-#projects h2
+.secTitle
 {
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    color: #FF8585;
+    color: #FF6B6B;
+    text-align: right;
+    margin: 5%;
+    font-size: 2.6em;
 }
 
-#skills h2
+.mainArticle
 {
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-    color: #FF8585;
+    text-align: right;
+    margin: 0 5% 0 0;
+    font-size: 1.6em;
+    border-right: 6px solid #FF6B6B;
+    padding-right: 1%;
 }
 
-#skills
+.secondArticle
 {
-    height: 100%;
+    text-align: left;
+    margin: 10% 0 0 5%;
+    font-size: 1.2em;
+    border-left: 6px solid #FF6B6B;
+    padding-left: 1%;
 }
 
-#skills .progress
+.social
 {
-    margin: 2%;
+    display: inline;
+    margin: 1%;
+}
+
+.social img
+{
+    width: 2em;
     height: 2em;
-    font-size: large;
 }
-
-.article
-{
-    font-size: 1.3em;
-    margin: 5% 2%;
-}
-
-ul
-{
-    list-style-type: disc;
-}
-
-li
-{
-    margin: 4% auto;
-}
-
-@media screen and (max-width: 600px) {
-    .typewriting {
-        font-size: 1.2em;
-    }
-}
-
-.typewriting {
-    color: #1A535C;
-    width: fit-content;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation:
-            typing 4s steps(70, end),
-            blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-}
-
-

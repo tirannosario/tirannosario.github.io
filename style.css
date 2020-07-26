@@ -1,0 +1,275 @@
+html,body
+{
+    height: 100%;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    padding: 0;
+}
+
+#main
+{
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    width: 98%;
+    height: 90%;
+    margin: 1% auto;
+    border-radius: 20px;
+    font-size: 1vw;
+}
+
+
+
+/*#nav a
+{
+    display: block;
+    text-align: center;
+    margin: 30% auto;
+    color: aliceblue;
+    text-decoration-line: none;
+}
+
+#nav:hover
+{
+    animation-name: ba;
+    animation-duration: 4s;
+}
+
+@keyframes link-animation {
+    from {
+        color: aliceblue;
+    }
+    to {
+        color: #FF6B6B;
+    }
+}
+
+#nav a:hover
+{
+    font-size: 1.1em;
+    animation-name: link-animation;
+    animation-duration: 1s;
+    color: #FF6B6B;
+}*/
+
+.navbar-nav
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link
+{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #F7FFF7;
+    text-decoration: none;
+    filter: grayscale(30%) opacity(0.8);
+    transition: 200ms;
+}
+
+.nav-link:hover
+{
+    filter: grayscale(0%) opacity(1);
+    color: #FF6B6B;
+}
+
+.link-text
+{
+    display: none;
+}
+
+.nav-link i
+{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+#content
+{
+    height: 94.7%;
+    width: 90%;
+    float: right;
+    font-weight: 400;
+    margin: 1.2%;
+}
+
+#biopic
+{
+    margin: 13% 13%;
+    width: 20%;
+    height: 32%;
+    border-radius: 50%;
+    border: 4px solid #F8FFF8;
+    float: right;
+    -webkit-box-shadow: 0px 0px 47px -25px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 47px -25px rgba(0,0,0,1);
+    box-shadow: 0px 0px 47px -25px rgba(0,0,0,1);
+}
+
+#info
+{
+    font-weight: 700;
+    font-size: 1.2em;
+    border-left: 6px solid #FF6B6B;
+    display: inline-block;
+    padding-left: 1%;
+    float: left;
+    margin: 7% 1% 5% 9%;
+}
+
+#contact
+{
+    font-weight: 700;
+    font-size: 1.2em;
+    border-left: 6px solid #FF6B6B;
+    display: inline-block;
+    padding-left: 1%;
+    float: left;
+    margin: 10% 1% 5% 9%;
+}
+
+#contact h2
+{
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #FF6B6B;
+}
+
+.social
+{
+    display: inline;
+    margin: 1%;
+}
+
+.social img
+{
+    width: 2em;
+    height: 2em;
+}
+
+.important
+{
+    color: #FF6B6B;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.title
+{
+    font-weight: 700;
+}
+
+.blur
+{
+    filter:blur(8px);
+    -webkit-filter:blur(8px);
+}
+
+/* Large Screens */
+@media only screen and (min-width: 600px) {
+    #nav
+    {
+        height: 94.7%;
+        width: 6%;
+        font-size: 1.8em;
+        float: left;
+        font-weight: 500;
+        border-radius: 20px;
+        margin: 1.2%;
+        -webkit-box-shadow: 0px 0px 47px -25px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 47px -25px rgba(0,0,0,1);
+        box-shadow: 0px 0px 47px -25px rgba(0,0,0,1);
+        background: #000626;
+        position: fixed;
+        transition: width 200ms ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav:hover
+    {
+        width: 20%;
+    }
+
+    #nav:hover .link-text
+    {
+        display: block;
+    }
+
+    .nav-item
+    {
+        margin: 3vh auto;
+        text-align: center;
+    }
+
+}
+
+/* Small Screens */
+@media only screen and (max-width: 600px)
+{
+    #nav
+    {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        background: #000626;
+        position: fixed;
+        font-size: 4em;
+        font-weight: 500;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-link
+    {
+        justify-content: center;
+    }
+
+    #main
+    {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 2vw;
+    }
+
+    #content
+    {
+        margin: 0;
+        font-size: 2em;
+        width: 100%;
+    }
+
+    #biopic
+    {
+        margin: 10% auto;
+        width: 38%;
+        height: 32%;
+        display: block;
+        float: none;
+    }
+
+    #info, #contact
+    {
+        margin: 10%;
+    }
+
+}

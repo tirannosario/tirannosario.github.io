@@ -268,6 +268,7 @@ body
     -webkit-box-shadow: 0px 0px 47px -25px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 47px -25px rgba(0,0,0,1);
     box-shadow: 0px 0px 47px -25px rgba(0,0,0,1);
+    overflow: auto;
 }
 
 .content h2::after
@@ -283,6 +284,19 @@ body
 .content:hover h2::after
 {
     width: 100%;
+}
+
+.content img
+{
+    width: 20%;
+    float: left;
+    margin: 0 2% 0 2%;
+}
+
+.years
+{
+    color: #000626;
+    font-weight: 500;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

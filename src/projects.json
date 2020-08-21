@@ -4,17 +4,5 @@
     "preview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus in.",
     "preview-img": "img/apartmentMonitoring/apartment_monitoring_preview.png",
     "article-link": "projects/apmonitoring.html"
-  },
-  {
-    "name": "ProjectZero",
-    "preview": "Progetto non esistente 0",
-    "preview-img": "g",
-    "article-link": "projects/apmonitoring.html"
-  },
-  {
-    "name": "ProjectOne",
-    "preview": "Progetto non esistente 1",
-    "preview-img": "",
-    "article-link": "projects/apmonitoring.html"
   }
 ]

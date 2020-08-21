@@ -357,6 +357,11 @@ body
     margin: 10% 0 2% 0;
 }
 
+.preview-content
+{
+    margin-bottom: 5%;
+}
+
 .preview-content p
 {
     padding: 0 5% 5% 5%;

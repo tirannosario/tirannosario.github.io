@@ -33,7 +33,7 @@ $( document ).ready(function() {
     $.get('https://rosariogalioto.info/src/projects.json',{}, function(data) {
         var projectsbox = $(".projects-box");
         var content = "";
-        data.forEach(project => content += "<div class=\"project-preview\"><div class=\"preview-img\"><img src="+project["preview-img"]+" alt=\"\"></div><div class=\"preview-content\"><p>"+project["preview"]+"</p><button title="+ project["name"] +">Open</button></div></div>");
+        data.forEach(project => content += "<div class=\"project-preview\"><div class=\"preview-img\"><img src="+project["preview-img"]+" alt=\"\"></div><div class=\"preview-content\"><p>"+project["preview"]+"</p><a href="+project["article-link"]+">Open</a></div></div>");
         projectsbox.html(content); // set the content
     });
 

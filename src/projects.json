@@ -2,24 +2,19 @@
   {
     "name": "ApartmentMonitoring",
     "preview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus in.",
-    "preview-img": "img/apartmentMonitoring/apartment_monitoring_preview.png",
-    "img1": "img/apartmentMonitoring/img1.png",
-    "img2": "img/apartmentMonitoring/img2.png",
-    "full-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae rutrum eros. Nulla arcu turpis, lacinia sit amet blandit in, sollicitudin vel ex. Sed fermentum nibh ex, nec mattis urna ullamcorper nec. Integer non mauris a erat vestibulum varius id eu nisl. Sed ut risus felis. Aliquam eget posuere magna, nec blandit tellus. Suspendisse convallis ornare aliquet. Integer sagittis ante ac elit luctus, nec fringilla lorem ultricies. Ut et magna a tellus vestibulum maximus. Integer ullamcorper metus sit amet neque ultricies, in condimentum dui dictum. Aenean egestas leo in urna faucibus, ut pellentesque odio rhoncus. Integer sagittis pharetra urna, eu elementum turpis scelerisque et.\n\nDonec iaculis in erat vitae gravida. Morbi eget varius nunc. Praesent blandit tellus libero, a luctus lacus iaculis a. Nam nec lacus elementum, sodales neque in, aliquet ante. Phasellus at cursus lectus. Donec vitae justo eu justo malesuada pretium sit amet eu tellus. Integer ut orci semper, faucibus enim sed, sagittis ante.",
-    "link": "https://apartmentmonitoring.ontomap.eu"
+    "preview-img": "img/apartmentMonitoring/apartmentMonitoring/apartment_monitoring_preview.png",
+    "article-link": "projects/apmonitoring.html"
   },
   {
     "name": "ProjectZero",
     "preview": "Progetto non esistente 0",
-    "preview-img": "img/apartment_monitoring_preview.png",
-    "img": "",
-    "full-text": "00000000000000000000000000000000000000000000"
+    "preview-img": "g",
+    "article-link": "projects/apmonitoring.html"
   },
   {
     "name": "ProjectOne",
     "preview": "Progetto non esistente 1",
-    "preview-img": "img/apartment_monitoring_preview.png",
-    "img": "",
-    "full-text": "111111111111111"
+    "preview-img": "",
+    "article-link": "projects/apmonitoring.html"
   }
 ]

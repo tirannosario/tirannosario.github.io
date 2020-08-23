@@ -301,8 +301,8 @@ body
 
 #skills-info
 {
-    margin: 5% 9%;
-    text-align: justify;
+    margin: 5% 10%;
+    text-align: center;
 }
 
 .skills-box
@@ -329,12 +329,14 @@ body
 
 #projects-info
 {
-    margin: 5% 9%;
+    margin: 5% 10%;
+    text-align: center;
 }
 
 .projects-box
 {
     margin: 2% 9%;
+    text-align: center;
 }
 
 .project-preview

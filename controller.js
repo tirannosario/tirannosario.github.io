@@ -30,7 +30,7 @@ $( document ).ready(function() {
     });
 
 
-    $.get('https://rosariogalioto.info/src/projects.json',{}, function(data) {
+    $.get('https://rosariogalioto.me/src/projects.json',{}, function(data) {
         var projectsbox = $(".projects-box");
         var content = "";
         data.forEach(project => content += "<div class=\"project-preview\"><div class=\"preview-img\"><img src="+project["preview-img"]+" alt=\"\"></div><div class=\"preview-content\"><p>"+project["preview"]+"</p><a href="+project["article-link"]+">Open</a></div></div>");
